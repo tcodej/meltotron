@@ -39,8 +39,8 @@
     <tags />
     <ui bgImage="background.png" width="812" height="375" layoutMode="relative" bgMode="top_left">
         <keyboard>
-            <color loNote="0" hiNote="42" color="FF000000" />
-            <color loNote="43" hiNote="77" color="FFFF0000" />
+            <color loNote="0" hiNote="40" color="FF000000" />
+            <color loNote="41" hiNote="77" color="FFFF0000" />
             <color loNote="78" hiNote="127" color="FF000000" />
         </keyboard>
         <tab name="main">
@@ -74,7 +74,7 @@
             <control x="300" y="75" width="40" height="40" style="linear_horizontal" type="percent" minValue="-12" maxValue="0" value="0">
                 <binding type="amp" level="instrument" position="0" parameter="GLOBAL_TUNING" />
             </control>
-            <menu x="22" y="75" width="225" height="30" requireSelection="false" placeholderText="A" value="1">
+            <menu x="22" y="75" width="225" height="30" requireSelection="false" placeholderText="A" value="2">
                 <option name="Off">
                     <binding type="general" level="group" position="0" parameter="ENABLED" translation="fixed_value" translationValue="false" />
                     <binding type="general" level="group" position="1" parameter="ENABLED" translation="fixed_value" translationValue="false" />
@@ -331,7 +331,7 @@
                     <binding type="general" level="group" position="14" parameter="ENABLED" translation="fixed_value" translationValue="true" />
                 </option>
             </menu>
-            <menu x="22" y="110" width="225" height="30" requireSelection="false" placeholderText="B" value="1">
+            <menu x="22" y="110" width="225" height="30" requireSelection="false" placeholderText="B" value="2">
                 <option name="Off">
                     <binding type="general" level="group" position="15" parameter="ENABLED" translation="fixed_value" translationValue="false" />
                     <binding type="general" level="group" position="16" parameter="ENABLED" translation="fixed_value" translationValue="false" />
@@ -621,7 +621,7 @@
                     <binding type="general" level="group" position="30" parameter="ENABLED" translation="fixed_value" translationValue="true" />
                 </option>
             </menu>
-            <menu x="22" y="145" width="225" height="30" requireSelection="false" placeholderText="C" value="1">
+            <menu x="22" y="145" width="225" height="30" requireSelection="false" placeholderText="C" value="2">
                 <option name="Off">
                     <binding type="general" level="group" position="31" parameter="ENABLED" translation="fixed_value" translationValue="false" />
                     <binding type="general" level="group" position="32" parameter="ENABLED" translation="fixed_value" translationValue="false" />
@@ -918,7 +918,7 @@
             <sample path="Samples\Other\Silence.wav" />
         </group>
         <group name="Flute">
-            <sample path="Samples\Woodwinds\Flute\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="A" />
+            <sample path="Samples\Woodwinds\Flute\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="A" />
             <sample path="Samples\Woodwinds\Flute\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="A" />
             <sample path="Samples\Woodwinds\Flute\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="A" />
             <sample path="Samples\Woodwinds\Flute\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="A" />
@@ -955,7 +955,7 @@
             <sample path="Samples\Woodwinds\Flute\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="A" />
         </group>
         <group name="Flute Chamberlin">
-            <sample path="Samples\Woodwinds\Flute-Chmb\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="A" />
+            <sample path="Samples\Woodwinds\Flute-Chmb\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="A" />
             <sample path="Samples\Woodwinds\Flute-Chmb\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="A" />
             <sample path="Samples\Woodwinds\Flute-Chmb\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="A" />
             <sample path="Samples\Woodwinds\Flute-Chmb\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="A" />
@@ -992,7 +992,7 @@
             <sample path="Samples\Woodwinds\Flute-Chmb\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="A" />
         </group>
         <group name="Clarinet">
-            <sample path="Samples\Woodwinds\Clarinet\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="A" />
+            <sample path="Samples\Woodwinds\Clarinet\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="A" />
             <sample path="Samples\Woodwinds\Clarinet\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="A" />
             <sample path="Samples\Woodwinds\Clarinet\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="A" />
             <sample path="Samples\Woodwinds\Clarinet\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="A" />
@@ -1029,7 +1029,7 @@
             <sample path="Samples\Woodwinds\Clarinet\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="A" />
         </group>
         <group name="Alto Sax">
-            <sample path="Samples\Woodwinds\Alto-Sax\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="A" />
+            <sample path="Samples\Woodwinds\Alto-Sax\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="A" />
             <sample path="Samples\Woodwinds\Alto-Sax\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="A" />
             <sample path="Samples\Woodwinds\Alto-Sax\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="A" />
             <sample path="Samples\Woodwinds\Alto-Sax\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="A" />
@@ -1066,7 +1066,7 @@
             <sample path="Samples\Woodwinds\Alto-Sax\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="A" />
         </group>
         <group name="Tenor Sax">
-            <sample path="Samples\Woodwinds\Tenor-Sax\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="A" />
+            <sample path="Samples\Woodwinds\Tenor-Sax\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="A" />
             <sample path="Samples\Woodwinds\Tenor-Sax\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="A" />
             <sample path="Samples\Woodwinds\Tenor-Sax\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="A" />
             <sample path="Samples\Woodwinds\Tenor-Sax\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="A" />
@@ -1139,7 +1139,7 @@
             <sample path="Samples\Woodwinds\Tenor-Sax-Chmb\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="A" />
         </group>
         <group name="Tenor &amp; Alto Sax">
-            <sample path="Samples\Woodwinds\Tenor-Alto-Sax\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="A" />
+            <sample path="Samples\Woodwinds\Tenor-Alto-Sax\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="A" />
             <sample path="Samples\Woodwinds\Tenor-Alto-Sax\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="A" />
             <sample path="Samples\Woodwinds\Tenor-Alto-Sax\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="A" />
             <sample path="Samples\Woodwinds\Tenor-Alto-Sax\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="A" />
@@ -1210,7 +1210,7 @@
             <sample path="Samples\Woodwinds\Oboe\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="A" />
         </group>
         <group name="Bassoon">
-            <sample path="Samples\Woodwinds\Bassoon\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="A" />
+            <sample path="Samples\Woodwinds\Bassoon\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="A" />
             <sample path="Samples\Woodwinds\Bassoon\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="A" />
             <sample path="Samples\Woodwinds\Bassoon\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="A" />
             <sample path="Samples\Woodwinds\Bassoon\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="A" />
@@ -1247,7 +1247,7 @@
             <sample path="Samples\Woodwinds\Bassoon\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="A" />
         </group>
         <group name="Woodwinds II">
-            <sample path="Samples\Woodwinds\Woodwind-2\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="A" />
+            <sample path="Samples\Woodwinds\Woodwind-2\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="A" />
             <sample path="Samples\Woodwinds\Woodwind-2\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="A" />
             <sample path="Samples\Woodwinds\Woodwind-2\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="A" />
             <sample path="Samples\Woodwinds\Woodwind-2\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="A" />
@@ -1284,7 +1284,7 @@
             <sample path="Samples\Woodwinds\Woodwind-2\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="A" />
         </group>
         <group name="Organ">
-            <sample path="Samples\Keys\Church-Organ\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="A" />
+            <sample path="Samples\Keys\Church-Organ\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="A" />
             <sample path="Samples\Keys\Church-Organ\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="A" />
             <sample path="Samples\Keys\Church-Organ\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="A" />
             <sample path="Samples\Keys\Church-Organ\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="A" />
@@ -1321,7 +1321,7 @@
             <sample path="Samples\Keys\Church-Organ\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="A" />
         </group>
         <group name="Pipe Organ">
-            <sample path="Samples\Keys\Church-Pipe-Organ\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="A" />
+            <sample path="Samples\Keys\Church-Pipe-Organ\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="A" />
             <sample path="Samples\Keys\Church-Pipe-Organ\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="A" />
             <sample path="Samples\Keys\Church-Pipe-Organ\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="A" />
             <sample path="Samples\Keys\Church-Pipe-Organ\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="A" />
@@ -1358,7 +1358,7 @@
             <sample path="Samples\Keys\Church-Pipe-Organ\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="A" />
         </group>
         <group name="Accordion">
-            <sample path="Samples\Keys\Italian-Accordion\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="A" />
+            <sample path="Samples\Keys\Italian-Accordion\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="A" />
             <sample path="Samples\Keys\Italian-Accordion\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="A" />
             <sample path="Samples\Keys\Italian-Accordion\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="A" />
             <sample path="Samples\Keys\Italian-Accordion\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="A" />
@@ -1395,7 +1395,7 @@
             <sample path="Samples\Keys\Italian-Accordion\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="A" />
         </group>
         <group name="Vibes">
-            <sample path="Samples\Keys\Vibes\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="A" />
+            <sample path="Samples\Keys\Vibes\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="A" />
             <sample path="Samples\Keys\Vibes\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="A" />
             <sample path="Samples\Keys\Vibes\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="A" />
             <sample path="Samples\Keys\Vibes\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="A" />
@@ -1435,7 +1435,7 @@
             <sample path="Samples\Other\Silence.wav" />
         </group>
         <group name="16 Violins">
-            <sample path="Samples\Strings\Violins\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="B" />
+            <sample path="Samples\Strings\Violins\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="B" />
             <sample path="Samples\Strings\Violins\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="B" />
             <sample path="Samples\Strings\Violins\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="B" />
             <sample path="Samples\Strings\Violins\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="B" />
@@ -1472,7 +1472,7 @@
             <sample path="Samples\Strings\Violins\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="B" />
         </group>
         <group name="Viola">
-            <sample path="Samples\Strings\Viola\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="B" />
+            <sample path="Samples\Strings\Viola\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="B" />
             <sample path="Samples\Strings\Viola\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="B" />
             <sample path="Samples\Strings\Viola\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="B" />
             <sample path="Samples\Strings\Viola\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="B" />
@@ -1509,7 +1509,7 @@
             <sample path="Samples\Strings\Viola\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="B" />
         </group>
         <group name="Cello">
-            <sample path="Samples\Strings\Cello\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="B" />
+            <sample path="Samples\Strings\Cello\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="B" />
             <sample path="Samples\Strings\Cello\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="B" />
             <sample path="Samples\Strings\Cello\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="B" />
             <sample path="Samples\Strings\Cello\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="B" />
@@ -1546,7 +1546,7 @@
             <sample path="Samples\Strings\Cello\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="B" />
         </group>
         <group name="Cello Chamberlin">
-            <sample path="Samples\Strings\Cello-Chmb\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="B" />
+            <sample path="Samples\Strings\Cello-Chmb\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="B" />
             <sample path="Samples\Strings\Cello-Chmb\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="B" />
             <sample path="Samples\Strings\Cello-Chmb\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="B" />
             <sample path="Samples\Strings\Cello-Chmb\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="B" />
@@ -1637,7 +1637,7 @@
             <sample path="Samples\Strings\300-Strings\C7.wav" loNote="96" hiNote="96" rootNote="96" tags="B" />
         </group>
         <group name="Mixed Strings">
-            <sample path="Samples\Strings\Mixed-Strings\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="B" />
+            <sample path="Samples\Strings\Mixed-Strings\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="B" />
             <sample path="Samples\Strings\Mixed-Strings\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="B" />
             <sample path="Samples\Strings\Mixed-Strings\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="B" />
             <sample path="Samples\Strings\Mixed-Strings\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="B" />
@@ -1674,7 +1674,7 @@
             <sample path="Samples\Strings\Mixed-Strings\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="B" />
         </group>
         <group name="Strings Brass">
-            <sample path="Samples\Strings\Strings-Brass\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="B" />
+            <sample path="Samples\Strings\Strings-Brass\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="B" />
             <sample path="Samples\Strings\Strings-Brass\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="B" />
             <sample path="Samples\Strings\Strings-Brass\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="B" />
             <sample path="Samples\Strings\Strings-Brass\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="B" />
@@ -1711,7 +1711,7 @@
             <sample path="Samples\Strings\Strings-Brass\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="B" />
         </group>
         <group name="M300 Strings A">
-            <sample path="Samples\Strings\M300A\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="B" />
+            <sample path="Samples\Strings\M300A\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="B" />
             <sample path="Samples\Strings\M300A\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="B" />
             <sample path="Samples\Strings\M300A\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="B" />
             <sample path="Samples\Strings\M300A\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="B" />
@@ -1748,7 +1748,7 @@
             <sample path="Samples\Strings\M300A\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="B" />
         </group>
         <group name="M300 Strings B">
-            <sample path="Samples\Strings\M300B\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="B" />
+            <sample path="Samples\Strings\M300B\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="B" />
             <sample path="Samples\Strings\M300B\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="B" />
             <sample path="Samples\Strings\M300B\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="B" />
             <sample path="Samples\Strings\M300B\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="B" />
@@ -1785,7 +1785,7 @@
             <sample path="Samples\Strings\M300B\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="B" />
         </group>
         <group name="Guitar">
-            <sample path="Samples\Strings\Guitar\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="B" />
+            <sample path="Samples\Strings\Guitar\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="B" />
             <sample path="Samples\Strings\Guitar\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="B" />
             <sample path="Samples\Strings\Guitar\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="B" />
             <sample path="Samples\Strings\Guitar\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="B" />
@@ -1822,7 +1822,7 @@
             <sample path="Samples\Strings\Guitar\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="B" />
         </group>
         <group name="8 Voice Choir">
-            <sample path="Samples\Voices\8-Choir\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="B" />
+            <sample path="Samples\Voices\8-Choir\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="B" />
             <sample path="Samples\Voices\8-Choir\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="B" />
             <sample path="Samples\Voices\8-Choir\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="B" />
             <sample path="Samples\Voices\8-Choir\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="B" />
@@ -1859,7 +1859,7 @@
             <sample path="Samples\Voices\8-Choir\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="B" />
         </group>
         <group name="Combined Choir">
-            <sample path="Samples\Voices\Combined-Choir\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="B" />
+            <sample path="Samples\Voices\Combined-Choir\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="B" />
             <sample path="Samples\Voices\Combined-Choir\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="B" />
             <sample path="Samples\Voices\Combined-Choir\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="B" />
             <sample path="Samples\Voices\Combined-Choir\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="B" />
@@ -1923,7 +1923,7 @@
             <sample path="Samples\Voices\Female\C5.wav" loNote="72" hiNote="72" rootNote="72" tags="B" />
         </group>
         <group name="Male Voice">
-            <sample path="Samples\Voices\Male\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="B" />
+            <sample path="Samples\Voices\Male\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="B" />
             <sample path="Samples\Voices\Male\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="B" />
             <sample path="Samples\Voices\Male\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="B" />
             <sample path="Samples\Voices\Male\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="B" />
@@ -1960,7 +1960,7 @@
             <sample path="Samples\Voices\Male\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="B" />
         </group>
         <group name="Boys Choir">
-            <sample path="Samples\Voices\Boys-Choir\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="B" />
+            <sample path="Samples\Voices\Boys-Choir\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="B" />
             <sample path="Samples\Voices\Boys-Choir\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="B" />
             <sample path="Samples\Voices\Boys-Choir\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="B" />
             <sample path="Samples\Voices\Boys-Choir\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="B" />
@@ -2000,7 +2000,7 @@
             <sample path="Samples\Other\Silence.wav" />
         </group>
         <group name="Trumpet">
-            <sample path="Samples\Brass\Trumpet\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="C" />
+            <sample path="Samples\Brass\Trumpet\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="C" />
             <sample path="Samples\Brass\Trumpet\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="C" />
             <sample path="Samples\Brass\Trumpet\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="C" />
             <sample path="Samples\Brass\Trumpet\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="C" />
@@ -2037,7 +2037,7 @@
             <sample path="Samples\Brass\Trumpet\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="C" />
         </group>
         <group name="Trombone">
-            <sample path="Samples\Brass\Trombone\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="C" />
+            <sample path="Samples\Brass\Trombone\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="C" />
             <sample path="Samples\Brass\Trombone\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="C" />
             <sample path="Samples\Brass\Trombone\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="C" />
             <sample path="Samples\Brass\Trombone\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="C" />
@@ -2074,7 +2074,7 @@
             <sample path="Samples\Brass\Trombone\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="C" />
         </group>
         <group name="Trombone Chamberlin">
-            <sample path="Samples\Brass\Trombone-Chmb\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="C" />
+            <sample path="Samples\Brass\Trombone-Chmb\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="C" />
             <sample path="Samples\Brass\Trombone-Chmb\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="C" />
             <sample path="Samples\Brass\Trombone-Chmb\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="C" />
             <sample path="Samples\Brass\Trombone-Chmb\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="C" />
@@ -2111,7 +2111,7 @@
             <sample path="Samples\Brass\Trombone-Chmb\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="C" />
         </group>
         <group name="Trombone &amp; Trumpet">
-            <sample path="Samples\Brass\Trombone-Trumpet\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="C" />
+            <sample path="Samples\Brass\Trombone-Trumpet\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="C" />
             <sample path="Samples\Brass\Trombone-Trumpet\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="C" />
             <sample path="Samples\Brass\Trombone-Trumpet\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="C" />
             <sample path="Samples\Brass\Trombone-Trumpet\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="C" />
@@ -2148,7 +2148,7 @@
             <sample path="Samples\Brass\Trombone-Trumpet\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="C" />
         </group>
         <group name="Mixed Brass">
-            <sample path="Samples\Brass\Mixed-Brass-B\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="C" />
+            <sample path="Samples\Brass\Mixed-Brass-B\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="C" />
             <sample path="Samples\Brass\Mixed-Brass-B\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="C" />
             <sample path="Samples\Brass\Mixed-Brass-B\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="C" />
             <sample path="Samples\Brass\Mixed-Brass-B\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="C" />
@@ -2185,7 +2185,7 @@
             <sample path="Samples\Brass\Mixed-Brass-B\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="C" />
         </group>
         <group name="Mixed Brass MkII">
-            <sample path="Samples\Brass\Mixed-Brass-MkII\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="C" />
+            <sample path="Samples\Brass\Mixed-Brass-MkII\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="C" />
             <sample path="Samples\Brass\Mixed-Brass-MkII\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="C" />
             <sample path="Samples\Brass\Mixed-Brass-MkII\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="C" />
             <sample path="Samples\Brass\Mixed-Brass-MkII\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="C" />
@@ -2222,7 +2222,7 @@
             <sample path="Samples\Brass\Mixed-Brass-MkII\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="C" />
         </group>
         <group name="GC 3 Brass">
-            <sample path="Samples\Brass\GC3-Brass\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="C" />
+            <sample path="Samples\Brass\GC3-Brass\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="C" />
             <sample path="Samples\Brass\GC3-Brass\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="C" />
             <sample path="Samples\Brass\GC3-Brass\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="C" />
             <sample path="Samples\Brass\GC3-Brass\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="C" />
@@ -2259,7 +2259,7 @@
             <sample path="Samples\Brass\GC3-Brass\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="C" />
         </group>
         <group name="Bossa Nova">
-            <sample path="Samples\Other\Bossa-Nova\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="C" />
+            <sample path="Samples\Other\Bossa-Nova\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="C" />
             <sample path="Samples\Other\Bossa-Nova\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="C" />
             <sample path="Samples\Other\Bossa-Nova\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="C" />
             <sample path="Samples\Other\Bossa-Nova\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="C" />
@@ -2296,7 +2296,7 @@
             <sample path="Samples\Other\Bossa-Nova\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="C" />
         </group>
         <group name="Cha Cha">
-            <sample path="Samples\Other\Cha-Cha\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="C" />
+            <sample path="Samples\Other\Cha-Cha\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="C" />
             <sample path="Samples\Other\Cha-Cha\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="C" />
             <sample path="Samples\Other\Cha-Cha\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="C" />
             <sample path="Samples\Other\Cha-Cha\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="C" />
@@ -2333,7 +2333,7 @@
             <sample path="Samples\Other\Cha-Cha\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="C" />
         </group>
         <group name="Dixie &amp; Trombone">
-            <sample path="Samples\Other\Dixie-Trombone\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="C" />
+            <sample path="Samples\Other\Dixie-Trombone\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="C" />
             <sample path="Samples\Other\Dixie-Trombone\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="C" />
             <sample path="Samples\Other\Dixie-Trombone\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="C" />
             <sample path="Samples\Other\Dixie-Trombone\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="C" />
@@ -2370,7 +2370,7 @@
             <sample path="Samples\Other\Dixie-Trombone\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="C" />
         </group>
         <group name="Foxtrot &amp; Saxophone">
-            <sample path="Samples\Other\Foxtrot-Sax\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="C" />
+            <sample path="Samples\Other\Foxtrot-Sax\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="C" />
             <sample path="Samples\Other\Foxtrot-Sax\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="C" />
             <sample path="Samples\Other\Foxtrot-Sax\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="C" />
             <sample path="Samples\Other\Foxtrot-Sax\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="C" />
@@ -2407,7 +2407,7 @@
             <sample path="Samples\Other\Foxtrot-Sax\F5.wav" loNote="77" hiNote="77" rootNote="77" tags="C" />
         </group>
         <group name="Jazz &amp; Strings">
-            <sample path="Samples\Other\Jazz-Strings\G2.wav" loNote="43" hiNote="43" rootNote="43" tags="C" />
+            <sample path="Samples\Other\Jazz-Strings\G2.wav" loNote="41" hiNote="43" rootNote="43" tags="C" />
             <sample path="Samples\Other\Jazz-Strings\G#2.wav" loNote="44" hiNote="44" rootNote="44" tags="C" />
             <sample path="Samples\Other\Jazz-Strings\A2.wav" loNote="45" hiNote="45" rootNote="45" tags="C" />
             <sample path="Samples\Other\Jazz-Strings\A#2.wav" loNote="46" hiNote="46" rootNote="46" tags="C" />
@@ -2450,7 +2450,7 @@
             <sample path="Samples\Other\Bungalow-Bill\Bill.wav" loNote="40" hiNote="77" rootNote="64" />
         </group>
         <group name="Test Saw">
-            <sample path="Samples\Other\Test-Saw\C3.wav" loNote="48" hiNote="48" rootNote="48" tags="C" />
+            <sample path="Samples\Other\Test-Saw\C3.wav" loNote="46" hiNote="48" rootNote="48" tags="C" />
             <sample path="Samples\Other\Test-Saw\C#3.wav" loNote="49" hiNote="49" rootNote="49" tags="C" />
             <sample path="Samples\Other\Test-Saw\D3.wav" loNote="50" hiNote="50" rootNote="50" tags="C" />
             <sample path="Samples\Other\Test-Saw\D#3.wav" loNote="51" hiNote="51" rootNote="51" tags="C" />
