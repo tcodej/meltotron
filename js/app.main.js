@@ -66,9 +66,7 @@ app.main = (function() {
                     { name: "Foxtrot &amp; Saxophone", path: "Other\\Foxtrot-Sax" },
                     { name: "Jazz &amp; Strings", path: "Other\\Jazz-Strings" },
                     { name: "Gong", sample: '<sample path="Samples\\Other\\Gong\\Gong.wav" loNote="40" hiNote="77" rootNote="60" />'},
-                    { name: "Bungalow Bill", sample: '<sample path="Samples\\Other\\Bungalow-Bill\\Bill.wav" loNote="40" hiNote="77" rootNote="64" />'},
-                    { name: "Test Saw", path: "Other\\Test-Saw", range: { start: 48, end: 60 }}
-                ]
+                    { name: "Bungalow Bill", sample: '<sample path="Samples\\Other\\Bungalow-Bill\\Bill.wav" loNote="40" hiNote="77" rootNote="64" />'}                ]
             }
         ],
         defaultRange = { start: 43, end: 77 },

@@ -7,31 +7,35 @@
         <effect type="phaser" mix="0.5" modDepth="0.2" modRate="0.2" centerFrequency="400" feedback="0.7" />
     </effects>
     <midi>
-        <cc number="93">
+        <cc number="73">
             <binding level="ui" type="control" parameter="VALUE" position="0" translation="linear" translationOutputMin="0" translationOutputMax="1" />
         </cc>
-        <cc number="73">
+        <cc number="75">
             <binding level="ui" type="control" parameter="VALUE" position="1" translation="linear" translationOutputMin="0" translationOutputMax="4" />
         </cc>
-        <cc number="75">
+        <cc number="79">
             <binding level="ui" type="control" parameter="VALUE" position="2" translation="linear" translationOutputMin="0" translationOutputMax="20" />
         </cc>
-        <cc number="91">
+        <cc number="18">
             <binding level="ui" type="control" parameter="VALUE" position="3" translation="linear" translationOutputMin="0" translationOutputMax="1" />
         </cc>
-        <cc number="79">
+        <cc number="19">
             <binding level="ui" type="control" parameter="VALUE" position="4" translation="linear" translationOutputMin="0" translationOutputMax="100" />
         </cc>
-        <cc number="72">
+        <cc number="1">
             <binding level="ui" type="control" parameter="VALUE" position="5" translation="linear" translationOutputMin="0" translationOutputMax="1" />
         </cc>
-        <cc number="71">
+        <cc number="16">
+            <binding level="ui" type="control" parameter="VALUE" position="5" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+        </cc>
+
+        <cc number="74">
             <binding level="ui" type="control" parameter="VALUE" position="6" translation="linear" translationOutputMin="0" translationOutputMax="1" />
         </cc>
-        <cc number="76">
+        <cc number="71">
             <binding level="ui" type="control" parameter="VALUE" position="7" translation="linear" translationOutputMin="0" translationOutputMax="1" />
         </cc>
-        <cc number="77">
+        <cc number="76">
             <binding level="ui" type="control" parameter="VALUE" position="8" translation="linear" translationOutputMin="0" translationOutputMax="1" />
         </cc>
     </midi>
@@ -44,31 +48,45 @@
             <color loNote="78" hiNote="127" color="FF000000" />
         </keyboard>
         <tab name="main">
-            <labeled-knob x="525" y="15" width="90" textSize="16" textColor="FF000000" trackForegroundColor="CC000000" trackBackgroundColor="66999999" label="Tone" type="float" minValue="0" maxValue="1" value="1.0">
+            <control x="565" y="45" width="60" height="60" parameterName="Tone" type="float" minValue="0.0" maxValue="1.0" value="1.0"
+                style="custom_skin_vertical_drag" customSkinImage="m400.png" customSkinNumFrames="31" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
                 <binding type="effect" level="instrument" position="0" parameter="FX_FILTER_FREQUENCY" translation="table" translationTable="0,33;0.3,150;0.4,450;0.5,1100;0.7,4100;0.9,11000;1.0001,22000" />
-            </labeled-knob>
-            <labeled-knob x="615" y="15" width="90" textSize="16" textColor="AA000000" trackForegroundColor="CC000000" trackBackgroundColor="66999999" label="Attack" type="float" minValue="0.0" maxValue="4.0" value="0.0">
+            </control>
+
+            <control x="645" y="45" width="60" height="60" parameterName="Attack" type="float" minValue="0.0" maxValue="4.0" value="0.0"
+                style="custom_skin_vertical_drag" customSkinImage="m400.png" customSkinNumFrames="31" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
                 <binding type="amp" level="instrument" position="0" parameter="ENV_ATTACK" />
-            </labeled-knob>
-            <labeled-knob x="705" y="15" width="90" textSize="16" textColor="AA000000" trackForegroundColor="CC000000" trackBackgroundColor="66999999" label="Release" type="float" minValue="0.0" maxValue="20.0" value="0.05">
+            </control>
+
+            <control x="725" y="45" width="60" height="60" parameterName="Release" type="float" minValue="0.0" maxValue="20.0" value="0.05"
+                style="custom_skin_vertical_drag" customSkinImage="m400.png" customSkinNumFrames="31" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
                 <binding type="amp" level="instrument" position="0" parameter="ENV_RELEASE" />
-            </labeled-knob>
-            <labeled-knob x="525" y="110" width="90" textSize="16" textColor="AA000000" trackForegroundColor="CC000000" trackBackgroundColor="66999999" label="Chorus" type="float" minValue="0.0" maxValue="1" value="0">
+            </control>
+
+            <control x="565" y="120" width="60" height="60" parameterName="Chorus" type="float" minValue="0.0" maxValue="1" value="0"
+                style="custom_skin_vertical_drag" customSkinImage="m400.png" customSkinNumFrames="31" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
                 <binding type="effect" level="instrument" position="1" parameter="FX_MIX" />
-            </labeled-knob>
-            <labeled-knob x="615" y="110" width="90" textSize="16" textColor="FF000000" trackForegroundColor="CC000000" trackBackgroundColor="66999999" label="Reverb" type="percent" minValue="0" maxValue="100" value="0.0">
+            </control>
+
+            <control x="645" y="120" width="60" height="60" parameterName="Reverb" type="percent" minValue="0" maxValue="100" value="0.0"
+                style="custom_skin_vertical_drag" customSkinImage="m400.png" customSkinNumFrames="31" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
                 <binding type="effect" level="instrument" position="2" parameter="FX_REVERB_WET_LEVEL" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-            </labeled-knob>
-            <labeled-knob x="705" y="110" width="90" textSize="16" textColor="FF000000" trackForegroundColor="CC000000" trackBackgroundColor="66999999" label="Phaser" type="percent" minValue="0" maxValue="1.0" value="0.0">
+            </control>
+
+            <control x="725" y="120" width="60" height="60" parameterName="Phaser" type="percent" minValue="0" maxValue="1.0" value="0.0"
+                style="custom_skin_vertical_drag" customSkinImage="m400.png" customSkinNumFrames="31" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
                 <binding type="effect" level="instrument" position="3" parameter="FX_MIX" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-            </labeled-knob>
-            <labeled-knob x="250" y="69" width="40" height="40" trackForegroundColor="CC000000" trackBackgroundColor="66999999" type="percent" value="1.0">
+            </control>
+
+            <labeled-knob x="270" y="69" width="40" height="40" trackForegroundColor="CC000000" trackBackgroundColor="66999999" type="percent" value="1.0">
                 <binding type="amp" level="tag" identifier="A" parameter="AMP_VOLUME" />
             </labeled-knob>
-            <labeled-knob x="250" y="104" width="40" height="40" trackForegroundColor="CC000000" trackBackgroundColor="66999999" type="percent" value="1.0">
+
+            <labeled-knob x="270" y="104" width="40" height="40" trackForegroundColor="CC000000" trackBackgroundColor="66999999" type="percent" value="1.0">
                 <binding type="amp" level="tag" identifier="B" parameter="AMP_VOLUME" />
             </labeled-knob>
-            <labeled-knob x="250" y="139" width="40" height="40" trackForegroundColor="CC000000" trackBackgroundColor="66999999" type="percent" value="1.0">
+
+            <labeled-knob x="270" y="139" width="40" height="40" trackForegroundColor="CC000000" trackBackgroundColor="66999999" type="percent" value="1.0">
                 <binding type="amp" level="tag" identifier="C" parameter="AMP_VOLUME" />
             </labeled-knob>
             <menu x="22" y="75" width="225" height="30" requireSelection="false" placeholderText="A" value="2">
