@@ -71,9 +71,6 @@
             <labeled-knob x="250" y="139" width="40" height="40" trackForegroundColor="CC000000" trackBackgroundColor="66999999" type="percent" value="1.0">
                 <binding type="amp" level="tag" identifier="C" parameter="AMP_VOLUME" />
             </labeled-knob>
-            <control x="300" y="75" width="40" height="40" style="linear_horizontal" type="percent" minValue="-12" maxValue="0" value="0">
-                <binding type="amp" level="instrument" position="0" parameter="GLOBAL_TUNING" />
-            </control>
             <menu x="22" y="75" width="225" height="30" requireSelection="false" placeholderText="A" value="2">
                 <option name="Off">
                     <binding type="general" level="group" position="0" parameter="ENABLED" translation="fixed_value" translationValue="false" />
