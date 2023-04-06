@@ -24,7 +24,13 @@ DecentSampler
     +-- Samples
         +-- Brass
         |   +-- Trumpet
-        |       +--- A#2.wav (etc.)
+        |       +--- G2.wav
+        |       +--- G#2.wav
+        |       +--- ...
+        |       +--- F5.wav
         +-- Woodwinds
             +-- Flute
-                +-- A#2.wav (etc.)
+                +-- G2.wav
+                +-- G#2.wav
+                +-- ...
+                +-- F5.wav
