@@ -48,47 +48,50 @@
             <color loNote="78" hiNote="127" color="FF000000" />
         </keyboard>
         <tab name="main">
-            <control x="565" y="45" width="60" height="60" parameterName="Tone" type="float" minValue="0.0" maxValue="1.0" value="1.0"
+            <control x="565" y="20" width="60" height="60" parameterName="Tone" type="float" minValue="0.0" maxValue="1.0" value="1.0"
                 style="custom_skin_vertical_drag" customSkinImage="m400.png" customSkinNumFrames="31" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
                 <binding type="effect" level="instrument" position="0" parameter="FX_FILTER_FREQUENCY" translation="table" translationTable="0,33;0.3,150;0.4,450;0.5,1100;0.7,4100;0.9,11000;1.0001,22000" />
             </control>
 
-            <control x="645" y="45" width="60" height="60" parameterName="Attack" type="float" minValue="0.0" maxValue="4.0" value="0.0"
+            <control x="645" y="20" width="60" height="60" parameterName="Attack" type="float" minValue="0.0" maxValue="4.0" value="0.0"
                 style="custom_skin_vertical_drag" customSkinImage="m400.png" customSkinNumFrames="31" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
                 <binding type="amp" level="instrument" position="0" parameter="ENV_ATTACK" />
             </control>
 
-            <control x="725" y="45" width="60" height="60" parameterName="Release" type="float" minValue="0.0" maxValue="20.0" value="0.05"
+            <control x="725" y="20" width="60" height="60" parameterName="Release" type="float" minValue="0.0" maxValue="20.0" value="0.05"
                 style="custom_skin_vertical_drag" customSkinImage="m400.png" customSkinNumFrames="31" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
                 <binding type="amp" level="instrument" position="0" parameter="ENV_RELEASE" />
             </control>
 
-            <control x="565" y="120" width="60" height="60" parameterName="Chorus" type="float" minValue="0.0" maxValue="1" value="0"
+            <control x="565" y="105" width="60" height="60" parameterName="Chorus" type="float" minValue="0.0" maxValue="1" value="0"
                 style="custom_skin_vertical_drag" customSkinImage="m400.png" customSkinNumFrames="31" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
                 <binding type="effect" level="instrument" position="1" parameter="FX_MIX" />
             </control>
 
-            <control x="645" y="120" width="60" height="60" parameterName="Reverb" type="percent" minValue="0" maxValue="100" value="0.0"
+            <control x="645" y="105" width="60" height="60" parameterName="Reverb" type="percent" minValue="0" maxValue="100" value="0.0"
                 style="custom_skin_vertical_drag" customSkinImage="m400.png" customSkinNumFrames="31" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
                 <binding type="effect" level="instrument" position="2" parameter="FX_REVERB_WET_LEVEL" translation="linear" translationOutputMin="0" translationOutputMax="1" />
             </control>
 
-            <control x="725" y="120" width="60" height="60" parameterName="Phaser" type="percent" minValue="0" maxValue="1.0" value="0.0"
+            <control x="725" y="105" width="60" height="60" parameterName="Phaser" type="percent" minValue="0" maxValue="1.0" value="0.0"
                 style="custom_skin_vertical_drag" customSkinImage="m400.png" customSkinNumFrames="31" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
                 <binding type="effect" level="instrument" position="3" parameter="FX_MIX" translation="linear" translationOutputMin="0" translationOutputMax="1" />
             </control>
 
-            <labeled-knob x="270" y="69" width="40" height="40" trackForegroundColor="CC000000" trackBackgroundColor="66999999" type="percent" value="1.0">
+            <control x="265" y="72" width="40" height="40" type="percent" value="1.0"
+                style="custom_skin_vertical_drag" customSkinImage="vol_white.png" customSkinNumFrames="31" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
                 <binding type="amp" level="tag" identifier="A" parameter="AMP_VOLUME" />
-            </labeled-knob>
+            </control>
 
-            <labeled-knob x="270" y="104" width="40" height="40" trackForegroundColor="CC000000" trackBackgroundColor="66999999" type="percent" value="1.0">
+            <control x="265" y="107" width="40" height="40" type="percent" value="1.0"
+                style="custom_skin_vertical_drag" customSkinImage="vol_white.png" customSkinNumFrames="31" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
                 <binding type="amp" level="tag" identifier="B" parameter="AMP_VOLUME" />
-            </labeled-knob>
+            </control>
 
-            <labeled-knob x="270" y="139" width="40" height="40" trackForegroundColor="CC000000" trackBackgroundColor="66999999" type="percent" value="1.0">
+            <control x="265" y="142" width="40" height="40" type="percent" value="1.0"
+                style="custom_skin_vertical_drag" customSkinImage="vol_white.png" customSkinNumFrames="31" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
                 <binding type="amp" level="tag" identifier="C" parameter="AMP_VOLUME" />
-            </labeled-knob>
+            </control>
             <menu x="22" y="75" width="225" height="30" requireSelection="false" placeholderText="A" value="2">
                 <option name="Off">
                     <binding type="general" level="group" position="0" parameter="ENABLED" translation="fixed_value" translationValue="false" />
@@ -906,24 +909,6 @@
                     <binding type="general" level="group" position="44" parameter="ENABLED" translation="fixed_value" translationValue="false" />
                     <binding type="general" level="group" position="45" parameter="ENABLED" translation="fixed_value" translationValue="true" />
                     <binding type="general" level="group" position="46" parameter="ENABLED" translation="fixed_value" translationValue="false" />
-                </option>
-                <option name="Test Saw">
-                    <binding type="general" level="group" position="31" parameter="ENABLED" translation="fixed_value" translationValue="false" />
-                    <binding type="general" level="group" position="32" parameter="ENABLED" translation="fixed_value" translationValue="false" />
-                    <binding type="general" level="group" position="33" parameter="ENABLED" translation="fixed_value" translationValue="false" />
-                    <binding type="general" level="group" position="34" parameter="ENABLED" translation="fixed_value" translationValue="false" />
-                    <binding type="general" level="group" position="35" parameter="ENABLED" translation="fixed_value" translationValue="false" />
-                    <binding type="general" level="group" position="36" parameter="ENABLED" translation="fixed_value" translationValue="false" />
-                    <binding type="general" level="group" position="37" parameter="ENABLED" translation="fixed_value" translationValue="false" />
-                    <binding type="general" level="group" position="38" parameter="ENABLED" translation="fixed_value" translationValue="false" />
-                    <binding type="general" level="group" position="39" parameter="ENABLED" translation="fixed_value" translationValue="false" />
-                    <binding type="general" level="group" position="40" parameter="ENABLED" translation="fixed_value" translationValue="false" />
-                    <binding type="general" level="group" position="41" parameter="ENABLED" translation="fixed_value" translationValue="false" />
-                    <binding type="general" level="group" position="42" parameter="ENABLED" translation="fixed_value" translationValue="false" />
-                    <binding type="general" level="group" position="43" parameter="ENABLED" translation="fixed_value" translationValue="false" />
-                    <binding type="general" level="group" position="44" parameter="ENABLED" translation="fixed_value" translationValue="false" />
-                    <binding type="general" level="group" position="45" parameter="ENABLED" translation="fixed_value" translationValue="false" />
-                    <binding type="general" level="group" position="46" parameter="ENABLED" translation="fixed_value" translationValue="true" />
                 </option>
             </menu>
         </tab>
@@ -2463,21 +2448,6 @@
         </group>
         <group name="Bungalow Bill">
             <sample path="Samples\Other\Bungalow-Bill\Bill.wav" loNote="40" hiNote="77" rootNote="64" />
-        </group>
-        <group name="Test Saw">
-            <sample path="Samples\Other\Test-Saw\C3.wav" loNote="46" hiNote="48" rootNote="48" tags="C" />
-            <sample path="Samples\Other\Test-Saw\C#3.wav" loNote="49" hiNote="49" rootNote="49" tags="C" />
-            <sample path="Samples\Other\Test-Saw\D3.wav" loNote="50" hiNote="50" rootNote="50" tags="C" />
-            <sample path="Samples\Other\Test-Saw\D#3.wav" loNote="51" hiNote="51" rootNote="51" tags="C" />
-            <sample path="Samples\Other\Test-Saw\E3.wav" loNote="52" hiNote="52" rootNote="52" tags="C" />
-            <sample path="Samples\Other\Test-Saw\F3.wav" loNote="53" hiNote="53" rootNote="53" tags="C" />
-            <sample path="Samples\Other\Test-Saw\F#3.wav" loNote="54" hiNote="54" rootNote="54" tags="C" />
-            <sample path="Samples\Other\Test-Saw\G3.wav" loNote="55" hiNote="55" rootNote="55" tags="C" />
-            <sample path="Samples\Other\Test-Saw\G#3.wav" loNote="56" hiNote="56" rootNote="56" tags="C" />
-            <sample path="Samples\Other\Test-Saw\A3.wav" loNote="57" hiNote="57" rootNote="57" tags="C" />
-            <sample path="Samples\Other\Test-Saw\A#3.wav" loNote="58" hiNote="58" rootNote="58" tags="C" />
-            <sample path="Samples\Other\Test-Saw\B3.wav" loNote="59" hiNote="59" rootNote="59" tags="C" />
-            <sample path="Samples\Other\Test-Saw\C4.wav" loNote="60" hiNote="60" rootNote="60" tags="C" />
         </group>
     </groups>
 </DecentSampler>
